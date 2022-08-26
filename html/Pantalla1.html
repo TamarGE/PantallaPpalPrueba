@@ -13,7 +13,10 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
-
+<!--
+    TENGO QUE ARREGLAS LAS H1-6 PARA QUE TENGAN EL TAMAÑO CORRECTO, Y CAMBIARLES
+    EL PADDING PARA QUE NO ESTÉN TAN SEPARADOS LOS TEXTOS ENTRE SÍ. 
+-->
 <body>
     <div id="NavBar">
         <div class="navbar-fixed">
@@ -66,13 +69,47 @@
     <br>
     <!--<div id="ImgPpal" class="row">
         <div class="l6 push-l3"> -->
-            <div class="carousel carousel-slider center" style="margin-block-end: 20px;">
-                <a class="carousel-item" href=""><img src="Img1.jfif"></a>
-                <a class="carousel-item" href=""><img src="Img1.jfif"></a>
-                <a class="carousel-item" href=""><img src="Img1.jfif"></a>
-              </div>
+    <div id="imgCarusel" class="container">
+        <div class="row">
+            <div class="col l12 m12 s12">
+                <div class="carousel carousel-slider center" style="margin-block-end: 20px;">
+                    <a class="carousel-item" href=""><img src="Img1.jfif"></a>
+                    <a class="carousel-item" href=""><img src="Img1.jfif"></a>
+                    <a class="carousel-item" href=""><img src="Img1.jfif"></a>
+                </div>
+            </div>
+         </div>
+    </div>
             <!--Para que en google aparezca la imágen esta tiene que estar subida a la web, no aparece si es una imágen sacada de tus archivos-->
-
+<footer class="page-footer grey darken-3">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l4">
+                <i class="material-icons prefix">add_box</i>
+                Nombre
+            </div>
+            <div class="col s12 l5">
+                <h6>Elementos</h6>
+                <ul class="col s6 l6">
+                    <li>Punto 1</li>
+                    <li>Punto 2</li>
+                </ul>
+                <ul class="col s6 l6">
+                    <li>Punto 3</li>
+                     <li>Punto 4</li>
+                </ul>
+            </div>
+            <div class="col s12 l3">
+                <div class="center">
+                    <h6>¡Dejanos tu comentario!</h6>
+                <br>
+                <i class="material-icons">email</i>
+            </div>
+            </div>
+        </div>
+    </div>
+</footer>
+            
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
@@ -86,8 +123,7 @@
         document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.carousel');
         var instances = M.Carousel.init(elems,{
-            indicators: true,
-            fullwidth: true
+            indicators: true
         });
         });
     </script>
