@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Import Google Icon Font-->
+    <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <form action="process.php" method="POST">
+            <div class="input-field">
+                <label for="title">Enter title</label>
+                <input type="text" name="Article_title" id="title">
+            </div>
+    
+            <textarea name="Article_content" id="Article_editor"></textarea>
+            <script src="ckeditor/ckeditor.js"></script>
+            <input type="submit" class="publish-btn" name="submit_data" value="publish">
+        </form>
+        <a href="index.php" target="_blank">Blog</a>
+    
+    </div>    
+    <script>
+        CKEDITOR.replace('Article_editor');
+    </script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            M.AutoInit();
+        })
+    </script>
+-->
+
+</body>
+
+</html>
